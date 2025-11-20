@@ -86,6 +86,36 @@ We propose a **two-stage, multi-modal, semi-supervised** framework:
    - **Grad-CAM heatmaps** highlighting critical regions influencing predictions.
 
 ---
+## 📂 Dataset: Disaster Assessment (Supervised Learning)
+
+The supervised learning dataset used in this project is hosted on Hugging Face:
+
+🔗 **Hugging Face Dataset:**  
+https://huggingface.co/datasets/abhinav1857/disaster_assessment
+
+The repository contains two main folders:
+
+- `images/` – pre/post-disaster **input images**
+- `masks/` – corresponding **segmentation masks / labels**
+
+Each mask file is aligned with its corresponding image file (same filename, different folder).
+
+---
+
+
+Make sure you have `git` (and preferably `git-lfs`) installed:
+
+```bash
+# Install Git LFS (one-time setup)
+git lfs install
+
+# Clone the dataset
+git clone https://huggingface.co/datasets/abhinav1857/disaster_assessment
+
+cd disaster_assessment
+ls
+# images/  masks/  README.md  .gitattributes
+```
 
 ## 🧹 Preprocessing Pipeline
 
